@@ -1,0 +1,13 @@
+{
+  "name": "dual-hp-economic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Industrial dual-effect heat pump economic tool — Open Thermal AI /calculate API",
+  "scripts": {
+    "calculate-api": "node server/calculate-api.mjs",
+    "test:calculate-api": "node server/test-calculate-api.mjs"
+  },
+  "keywords": ["dual-effect", "heat-pump", "open-thermal-ai"],
+  "author": "荆炎荣",
+  "license": "MIT"
+}

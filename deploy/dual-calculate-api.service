@@ -1,0 +1,17 @@
+[Unit]
+Description=Dual-Effect Heat Pump Economic Tool /calculate API (Open Thermal AI)
+After=network.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/opt/dual-calculate-api
+Environment=HOST=127.0.0.1
+Environment=PORT=9109
+# Optional: Environment=ENGINE_API_KEY=your-shared-secret
+ExecStart=/usr/bin/node server/calculate-api.mjs
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
